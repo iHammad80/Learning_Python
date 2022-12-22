@@ -1,0 +1,10 @@
+# Methods for importing random word from a file.
+import random
+with open ("Words.txt") as f:
+   x=f.read()
+   y=list(map(str,x.split()))
+
+print(random.choice(y))
+
+x=random.choice((open("Words.txt").readline().split()))
+print(x)
